@@ -1,0 +1,121 @@
+body {
+    background-color: darkolivegreen;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    display: flex;
+    background-color: slategrey;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+
+@media screen and (min-width:600px) {
+    #navbar {
+        justify-content: left;
+        padding: 0;
+    }
+
+    #page {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+@media screen and (min-width:600px) {
+    #mobile-h2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:599px) {
+    #desktop-h2 {
+        display: none;
+    }
+}
+
+#wrapper1 {
+    display: flex;
+    flex-direction: row;
+    /* width: 25px;; */
+    /* justify-content: space-around; */
+    /* margin-bottom: 15px; */
+}
+
+@media screen and (min-width:600px) {
+    #wrapper1 {
+        flex-direction: column;
+        width: 120px;
+        height: 100vh;
+        padding: 0 30px;
+        justify-content: normal;
+        align-items: center;
+    }
+}
+
+main {
+    /* border: 1px solid black; */
+    margin: 0 70px;
+}
+
+h1, h3 {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.box {
+    /* display: flex; NEVER DO THIS, PUT FLEX ON THE WRAPPER NOT THE THING */
+    border: 2px solid black;
+    width: 90px;
+    padding: 4px 5px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+@media screen and (min-width:600px) {
+    .box {
+        margin: 5px 0;
+    }
+}
+
+.box:hover {
+    background-color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+input, label {
+    font-size: 2em;
+}
+
+input {
+    background-color: antiquewhite;
+}
+
+dl {
+    /* margin-left: 0 0 10px 25px; */
+    margin-top: 0;
+    padding-left: 70px;
+    /* margin-bottom: 10px; */
+}
