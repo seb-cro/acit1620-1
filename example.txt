@@ -1,4 +1,0 @@
-This is another example file.
-I enjoy using git.
-It is very fun.
-I think it can be confusing sometimes though.
